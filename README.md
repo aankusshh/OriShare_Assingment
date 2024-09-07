@@ -63,7 +63,7 @@ nohup node app.js > app.log 2>&1 &
 2. Install the following extra plugins:
   - AWS CodeDeploy Plugin
   - AWS CodeBuild Plugin
-3. Go to "Manage Jenkins" -> "Manage Credentials". (for AWS and git)
+3. Go to "Manage Jenkins" -> "Manage Credentials". (for AWS and git using access tokens)
 4. Configure the Webhook (so if any changes occur in the git, the jenkins will get triggered and build the code automatically)
 5. Set or Create the pipeline
 ```
