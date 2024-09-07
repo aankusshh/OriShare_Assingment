@@ -11,7 +11,7 @@ APP_DIR="/home/ubuntu/my-simple-web-app"
 
 # Navigate to the application directory
 if [ -d "$APP_DIR" ]; then
-    cd "$APP_DIR" || exit 1
+    cd "$APP_DIR" || { echo "Error: Failed to navigate to $APP_DIR." >&2; exit 1; }
 else
     echo "Error: Application directory $APP_DIR does not exist." >&2
     exit 1
